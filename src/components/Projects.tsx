@@ -10,12 +10,12 @@ import tamaquotationImage from '../assets/tama-quotation.png'
 
 const projects = [
   {
-    title: "Mormap",
+    title: "Perdclinic",
     description: "A healthcare CRM platform that enables doctors to efficiently manage patient updates and communication online, enhancing care and engagement.",
     image: mormapImage,
     tech: ["React", "Next.js", "Node.js", "TypeScript", "Microservice"],
     github: "https://github.com/Mormap",
-    live: "https://app.mormap.com"
+    live: "https://perdclinic.com"
   },
   {
     title: "Raisebiz",

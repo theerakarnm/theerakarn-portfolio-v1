@@ -1,11 +1,25 @@
 import { motion } from 'framer-motion';
-import { Building2, Briefcase } from 'lucide-react';
+import { Building2, Briefcase, Trees, Cpu } from 'lucide-react';
 
 const experiences = [
   {
+    company: "PlanthiaTech",
+    title: "Founder, CEO",
+    period: "Present",
+    summary: "As the CEO of PlantyrTech, I guide our vision of cultivating innovative technology solutions that organically scale and evolve with your business needs. I've led our growth, combining a deep commitment to sustainability with cutting-edge technological innovation.",
+    icon: Trees
+  },
+  {
+    company: "Eukron Tech",
+    title: "Founder, CTO",
+    period: "Present",
+    summary: "As the Chief Technology Officer at Eukron, I lead our mission to Innovate • Transform • Achieve, harnessing advanced technology and smart solutions to empower businesses worldwide. Since joining Eukron, I’ve steered our technical vision, built high-performing teams, and overseen the delivery of robust platforms that drive growth, efficiency, and digital transformation.",
+    icon: Cpu
+  },
+  {
     company: "Mormap",
     title: "Co-Founder",
-    period: "Present",
+    period: "Previous",
     summary: "As the Founder and CTO of MorMap, I was responsible for overseeing all technical aspects of the project, leading the development of a complete end-to-end application and system infrastructure. This involved designing and implementing the entire network, security protocols, and CI/CD pipelines for each service.",
     icon: Building2
   },
@@ -29,14 +43,14 @@ export default function Experience() {
   return (
     <div className="min-h-screen bg-black/90 py-20 relative">
       <div className="max-w-6xl mx-auto px-4">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           className="text-4xl font-bold text-white mb-12 text-center"
         >
           Experience
         </motion.h2>
-        
+
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <motion.div
