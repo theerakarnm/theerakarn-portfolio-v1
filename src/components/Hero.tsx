@@ -14,8 +14,10 @@ export default function Hero() {
         className="text-center z-10"
       >
         <h1 className="text-6xl font-bold text-white mb-4">Theerakarn Maiwong</h1>
-        <p className="text-xl text-purple-200 mb-8">Full Stack Developer & Tech Enthusiast</p>
-
+        {/* <p className="text-xl text-purple-200 mb-8">Full Stack Developer & Tech Enthusiast</p> */}
+        <h2 className="text-xl font-semibold text-purple-200 mb-8">
+          Full Stack Developer & Tech Enthusiast
+        </h2>
         <div className="flex gap-6 justify-center">
           <a href="https://github.com/theerakarnm" target="_blank" rel="noopener noreferrer"
             className="text-white hover:text-purple-400 transition-colors">
