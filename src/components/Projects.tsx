@@ -85,8 +85,8 @@ export default function Projects() {
               key={project.title}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              className="bg-purple-900/20 rounded-lg overflow-hidden backdrop-blur-sm border border-purple-500/20"
+              transition={{ delay: index * 0.1 }}
+              className="bg-purple-900/20 rounded-lg overflow-hidden backdrop-blur-sm border border-purple-500/20 hover:bg-purple-900/40 hover:scale-105 transition-transform"
             >
               <img
                 src={project.image}
