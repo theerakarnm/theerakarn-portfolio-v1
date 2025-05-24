@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Building2, Briefcase, Trees, Cpu } from 'lucide-react';
+import { Building2, Briefcase, Trees, Cpu, Pill, Link, Link2 } from 'lucide-react';
 
 const experiences = [
   {
@@ -7,35 +7,40 @@ const experiences = [
     title: "Founder, CEO",
     period: "Present",
     summary: "As the CEO of PlantyrTech, I guide our vision of cultivating innovative technology solutions that organically scale and evolve with your business needs. I've led our growth, combining a deep commitment to sustainability with cutting-edge technological innovation.",
-    icon: Trees
+    icon: Trees,
+    site: "https://plantyr.eukron.com",
   },
   {
     company: "Eukron Tech",
     title: "Founder, CTO",
     period: "Present",
     summary: "As the Chief Technology Officer at Eukron, I lead our mission to Innovate • Transform • Achieve, harnessing advanced technology and smart solutions to empower businesses worldwide. Since joining Eukron, I’ve steered our technical vision, built high-performing teams, and overseen the delivery of robust platforms that drive growth, efficiency, and digital transformation.",
-    icon: Cpu
+    icon: Cpu,
+    site: "https://eukron.com",
   },
   {
-    company: "Mormap",
-    title: "Co-Founder",
+    company: "YaBEZ",
+    title: "Chief Operating Officer",
     period: "Previous",
-    summary: "As the Founder and CTO of MorMap, I was responsible for overseeing all technical aspects of the project, leading the development of a complete end-to-end application and system infrastructure. This involved designing and implementing the entire network, security protocols, and CI/CD pipelines for each service.",
-    icon: Building2
+    summary: "As the Chief Operating Officer (COO) of YaBEZ, I drive operational excellence and strategic execution within a pioneering health-tech startup dedicated to transforming dermatological care. YaBEZ blends traditional Thai herbal medicine with modern scientific methodologies, offering innovative, steroid-free topical treatments for chronic skin diseases, particularly psoriasis.",
+    icon: Pill,
+    site: "https://yabez.biz",
   },
   {
     company: "Itone",
     title: "Application Development Analyst",
     period: "Previous",
     summary: "At ITONE.co, I served as a full-stack developer responsible for developing internal back-office systems and delivering tailored solutions to clients. My role involved working extensively across both the frontend and backend, leveraging tools such as AngularJS, Java Spring Boot, and PostgreSQL.",
-    icon: Briefcase
+    icon: Briefcase,
+    site: "https://itone.co",
   },
   {
     company: "G-Source",
     title: "Part-time Full-stack",
     period: "Previous",
     summary: "At G-Source, I worked as a full-stack developer, where I was responsible for end-to-end application development using TypeScript and Next.js (React). My role encompassed both frontend and backend development, ensuring seamless integration and user experience.",
-    icon: Building2
+    icon: Building2,
+    site: "https://gsource.app"
   }
 ];
 
@@ -65,7 +70,16 @@ export default function Experience() {
                   <exp.icon className="w-6 h-6 text-purple-400" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold text-white mb-2">{exp.company}</h3>
+                  <div >
+                    {exp.site ? (
+                      <a href={exp.site} target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:underline flex items-center mb-2">
+                        <h3 className="text-2xl font-semibold text-white">{exp.company}</h3>
+                        <Link className="inline w-4 h-4 ml-2" />
+                      </a>
+                    ) : (
+                      <h3 className="text-2xl font-semibold text-white">{exp.company}</h3>
+                    )}
+                  </div>
                   <p className="text-purple-300 mb-2">{exp.title}</p>
                   <p className="text-gray-400">{exp.summary}</p>
                 </div>

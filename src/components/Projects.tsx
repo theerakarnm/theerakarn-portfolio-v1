@@ -17,12 +17,11 @@ const projects = [
     tech: ['Tanstack', 'TypeScript', 'Tailwind', 'Hono'],
   },
   {
-    title: "Perdclinic",
+    title: "PostMed",
     description: "A healthcare CRM platform that enables doctors to efficiently manage patient updates and communication online, enhancing care and engagement.",
     image: mormapImage,
     tech: ["React", "Next.js", "Node.js", "TypeScript", "Microservice"],
     github: "https://github.com/Mormap",
-    live: "https://perdclinic.com"
   },
   {
     title: "Raisebiz",
@@ -46,7 +45,7 @@ const projects = [
     image: pinusImage,
     tech: ["Remix.js", "TypeScript", "Tailwind", "Hono"],
     github: "#",
-    live: "#"
+    live: "https://perdclinic.com"
   },
   {
     title: "DR.ASA | Tracking Diabetes",
