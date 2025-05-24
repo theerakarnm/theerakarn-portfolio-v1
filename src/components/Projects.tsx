@@ -7,8 +7,15 @@ import pinusImage from '../assets/pinus.png'
 import diabetesImage from '../assets/dr.asarrp.png'
 import tamacollectinImage from '../assets/tama-collection.png'
 import tamaquotationImage from '../assets/tama-quotation.png'
+import kneeRegistryImage from '../assets/knee-registry.png'
 
 const projects = [
+  {
+    title: "Knee Registry for Thummasat University Hospital",
+    description: "A software that storing and managing patient profiles specifically for knee patients",
+    image: kneeRegistryImage,
+    tech: ['Tanstack', 'TypeScript', 'Tailwind', 'Hono'],
+  },
   {
     title: "Perdclinic",
     description: "A healthcare CRM platform that enables doctors to efficiently manage patient updates and communication online, enhancing care and engagement.",
